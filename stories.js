@@ -125,10 +125,6 @@ app.delete('/stories/:storyId', async (req, res) => {
 
         const result = await stories.deleteOne({ storyId: storyId });
 
-        if (result.deletedCount === 0) {
-            return res.status(404).send("Story not found");
-        }
-
         res.status(200).send(`Story with ID: ${storyId} deleted successfully`);
     } catch (err) {
         console.error("Error deleting story:", err);
