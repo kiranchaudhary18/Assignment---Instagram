@@ -1,6 +1,8 @@
 # instagram-assignment
  https://documenter.getpostman.com/view/39216531/2sAYQUptnm
 
+file:///C:/Users/HP/AppData/Local/Microsoft/Windows/INetCache/IE/O8L7AVX0/DocScanner%20Jan%209,%202025%206-03%20PM[1].pdf
+
 Instagram-Inspired API
 This is an Instagram-inspired API built using Node.js, Express, and MongoDB. It mimics various core functionalities of an Instagram-like platform, allowing users to manage profiles, posts, comments, followers, likes, and stories. The API includes endpoints to interact with Users, Posts, Comments, Likes, Followers, and Stories collections in MongoDB.
 
