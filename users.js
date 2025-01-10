@@ -1,18 +1,18 @@
 const express = require('express');
 const { MongoClient , ObjectId } = require('mongodb');
-
-
+const cors = require('cors');
 
 
 const app = express();
-const port = 3002;
+const port = process.env.PORT || 3002;
+const uri = process.env.MONGODB_URI || "mongodb+srv://kiranchaudharycg:kiran18%4022@cluster0.mbfo8.mongodb.net/";
 
-// MongoDB connection details
-const uri = "mongodb://127.0.0.1:27017"; 
+
 const dbName = "insta";
 
 // Middleware
 app.use(express.json());
+app.use(cors());
 
 let db, users
 
